@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-final baseUrl = "http://192.168.0.152:8080";
+final baseUrl = dotenv.env['BASE_URL']!;
 
 final dio = Dio(
   BaseOptions(
