@@ -1,3 +1,4 @@
+import 'package:ballkkaye_frontend/_core/style/m_icon.dart';
 import 'package:ballkkaye_frontend/ui/pages/holder/chat_room/list_page/chat_room_list_page.dart';
 import 'package:ballkkaye_frontend/ui/pages/holder/game_center/game_center_page.dart';
 import 'package:ballkkaye_frontend/ui/pages/holder/home/home_page.dart';
@@ -52,23 +53,23 @@ class _MainHolderState extends State<MainHolder> {
       items: [
         BottomNavigationBarItem(
           label: "예측",
-          icon: Icon(CupertinoIcons.check_mark_circled),
+          icon: MIcon.nav.bottom.prediction,
         ),
         BottomNavigationBarItem(
           label: "직관기록",
-          icon: Icon(CupertinoIcons.book),
+          icon: MIcon.nav.bottom.record,
         ),
         BottomNavigationBarItem(
           label: "홈",
-          icon: Icon(CupertinoIcons.home),
+          icon: MIcon.nav.bottom.home,
         ),
         BottomNavigationBarItem(
           label: "채팅",
-          icon: Icon(CupertinoIcons.chat_bubble),
+          icon: MIcon.nav.bottom.chat,
         ),
         BottomNavigationBarItem(
           label: "동행",
-          icon: Icon(CupertinoIcons.person_2),
+          icon: MIcon.nav.bottom.match,
         ),
       ],
     );
